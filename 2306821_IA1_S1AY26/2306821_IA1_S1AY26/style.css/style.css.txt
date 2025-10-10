@@ -111,3 +111,38 @@
     border-radius: 10px;
     color: #fff;
   }
+
+  <h2>Color Palette, Icons, and Typography</h2>
+        <h3>Color Palette</h3>
+        <div class="palette">
+            <div class="color-swatch" style="background-color: rgb(52, 152, 219);">
+                <p>RGB(52,152,219)</p>
+                <p>#3498db</p>
+            </div>
+            <div class="color-swatch" style="background-color: rgb(231, 76, 60);">
+                <p>RGB(231,76,60)</p>
+                <p>#e74c3c</p>
+            </div>
+            <div class="color-swatch" style="background-color: rgb(241, 196, 15);">
+                <p>RGB(241,196,15)</p>
+                <p>#f1c40f</p>
+            </div>
+            <div class="color-swatch" style="background-color: rgb(44, 62, 80);">
+                <p>RGB(44,62,80)</p>
+                <p>#2c3e50</p>
+            </div>
+        </div>
+
+        <h3>Icons and Dimensions</h3>
+        <ul>
+            <li>Icon set: Font Awesome</li>
+            <li>Icon dimensions: 24px x 24px</li>
+        </ul>
+
+        <h3>Fonts</h3>
+        <ul>
+            <li>Font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif</li>
+            <li>Root font-weight: 400</li>
+        </ul>
+    </div>
+
