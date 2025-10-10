@@ -157,7 +157,6 @@
   <h2>My Resume</h2>
   
   <div class="resume-container">
-    <!-- Personal Details -->
     <div class="section personal-details">
       <h3>Personal Details</h3>
       <p><strong>Name:</strong> Stephane Allen</p>
@@ -166,7 +165,6 @@
       <p><strong>Address:</strong> Apt 1B9 Unions Estate, Twickenham Park, Spanish Town P.O. St. Catherine</p>
     </div>
     
-    <!-- Education -->
     <div class="section education">
       <h3>Education</h3>
       <ul>
@@ -264,18 +262,23 @@
     <section>
         <h2>Chapter 4: Achieve your goals</h2>
         <p>
-            In this chapter, the authors emphasize the importance of having a clear and compelling purpose in life. A well-defined purpose acts as a guiding star, helping individuals stay focused and motivated through challenges. Jim Rohn advocates for defining your "why" to drive your actions and decisions.
+            In this chapter, the authors emphasize the importance of having a clear and compelling purpose in life. 
+			A well-defined purpose acts as a guiding star, helping individuals stay focused and motivated through challenges. 
+			Jim Rohn advocates for defining your "why" to drive your actions and decisions.
         </p>
         <h3>How this applies to my life:</h3>
         <p>
-            I can benefit by taking time to clearly identify my personal goals and values. Setting a clear purpose will help me prioritize my tasks and stay committed, especially when faced with obstacles. For example, defining my career goals will motivate me to develop the necessary skills and stay disciplined.
+            I can benefit by taking time to clearly identify my personal goals and values. 
+			Setting a clear purpose will help me prioritize my tasks and stay committed, 
+			especially when faced with obstacles. For example, defining my career goals will motivate me to develop the necessary skills and stay disciplined.
         </p>
     </section>
     
     <section>
         <h2>Chapter 5: The proper use of time</h2>
         <p>
-            This chapter discusses how maintaining a positive attitude influences success. Positivity attracts opportunities and helps overcome setbacks. Jim Rohn suggests that attitude is a choice and that cultivating optimism can transform one's life.
+            This chapter discusses how maintaining a positive attitude influences success. 
+			Positivity attracts opportunities and helps overcome setbacks. Jim Rohn suggests that attitude is a choice and that cultivating optimism can transform one's life.
         </p>
         <h3>How this applies to my life:</h3>
         <p>
@@ -306,7 +309,8 @@
         </p>
         <h3>How this applies to my life:</h3>
         <p>
-             I can commit to daily learning by reading books, listening to podcasts, or taking online courses. This habit will help me stay current, sharpen my skills, and adapt to changing circumstances, ultimately enabling me to reach my potential. 
+             I can commit to daily learning by reading books, listening to podcasts, or taking online courses. This habit will help me stay current, 
+			 sharpen my skills, and adapt to changing circumstances, ultimately enabling me to reach my potential. 
         </p>
     </section>
     
@@ -324,11 +328,9 @@
         <h3>Mobile Layout (min 600px)</h3>
        
         <img src="images/mobile-layout.png" alt="Mobile Layout Design" class="layout-image" />
-        <p>Includes <code>&lt;div&gt;</code> groups such as header, main content, footer, and navigation.</p>
 
         <h3>Desktop Layout (min 950px)</h3>
         <img src="images/desktop-layout.png" alt="Desktop Layout Design" class="layout-image" />
-        <p>Designed with larger viewports, includes <code>&lt;div&gt;</code> groups for sidebar, main content, header, footer, etc.</p>
     </div>
 
     <div class="section" id="style-palette">
@@ -355,8 +357,7 @@
 
         <h3>Icons and Dimensions</h3>
         <ul>
-            <li>Icon set: Font Awesome (or your chosen icon library)</li>
-            <li>Icon example: &lt;i class="fas fa-home"&gt;&lt;/i&gt; (size: 24px)</li>
+            <li>Icon set: Font Awesome </li>
             <li>Icon dimensions: 24px x 24px</li>
         </ul>
 
@@ -370,36 +371,29 @@
     
     <div class="section" id="git-link">
         <h2>GitHub Repository</h2>
-        <p>Access all source code, resources, and files here:</p>
-        <a href=https://github.com/allenstephane3-crypto/your-repo target="_blank">
+        <a href= "https://github.com/allenstephane3-crypto/Temp/tree/main/2306821_IA1_S1AY26/2306821_IA1_S1AY26" target="_blank">
             GitHub Repository for IA#1
         </a>
     </div>
 
     
     <div class="section" id="hosting">
-        <h2>Live Demo (Hosting Link)</h2>
-        <p>View the live website hosted on free hosting services:</p>
-        <a href="https://yourwebsite.herokuapp.com" target="_blank">
-            Your Live Website
+        <h2>Hosting Link</h2>
+        <a href=" https://allenstephane3-crypto.github.io/Temp/" target="_blank">
+            My Live Website
         </a>
     </div>
 
+    
     <div class="section" id="references">
         <h2>References</h2>
-        <p>Include all sources used in creating the website in APA format. Example:</p>
-        <ul>
-            <li>Author, A. A. (Year). <em>Title of Book</em>. Publisher.</li>
-            <li>Website Name. (Year). <em>Title of webpage</em>. URL</li>
-            <li>Font Awesome. (n.d.). <em>Icons library</em>. https://fontawesome.com/</li>
+        <li>Jim Rohn & Chris Widener (2005). <em></em> Jim Rohn International. </li>
+		 <li>Book: "Twelve Pillars" by Jim Rohn & Chris Widener</li
         </ul>
     </div>
 
 </body>
 </html>
-            <ul>
-                <li>Book: "Twelve Pillars" by Jim Rohn & Chris Widener</li>
-                <li>Website: Example.com</li>
             </ul>
         </section>
     </main>
