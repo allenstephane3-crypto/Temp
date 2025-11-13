@@ -1,0 +1,1014 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>EcoWares - Desktop & Mobile Layout</title>
+<style>
+  /* Basic Reset */
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  /* Body styles */
+  body {
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    background-color: #f0f8f5;
+    color: #333;
+  }
+
+  /* Header */
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #4CAF50;
+  }
+  .logo {
+    display: flex;
+    align-items: center;
+  }
+  .logo img {
+    width: 150px;
+    height: auto;
+  }
+
+  /* Navigation */
+  nav {
+    display: flex;
+  }
+  nav ul {
+    display: flex;
+    list-style: none;
+  }
+  nav li {
+    margin-left: 20px;
+  }
+  nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+  }
+
+  /* Main Content */
+  .main {
+    display: flex;
+    max-width: 1200px;
+    margin: 20px auto;
+    gap: 20px;
+  }
+  aside.sidebar {
+    flex: 1;
+    padding: 20px;
+  }
+  section.products-grid {
+    flex: 3;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+  }
+
+  /* Product Card */
+  .product-card {
+    background: #fff;
+    border-radius: 8px;
+    padding: 15px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+  }
+  .product-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+  }
+  .product-image {
+    width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+  }
+  .product-title {
+    font-size: 1.2em;
+    margin-bottom: 8px;
+    color: #2e7d32;
+  }
+  .product-price {
+    font-size: 1.1em;
+    margin-bottom: 10px;
+  }
+
+  /* Footer */
+  footer {
+    background-color: #2e7d32;
+    color: white;
+    text-align: center;
+    padding: 20px;
+  }
+
+  /* Responsive adjustments (if needed) */
+  @media(max-width: 950px) {
+    .main {
+      flex-direction: column;
+    }
+  }
+
+  /* Responsive product images for desktop */
+  @media(min-width: 950px) {
+    .product-image {
+      max-width: 250px;
+    }
+  }
+</style>
+</head>
+<body>
+<header class="header">
+  <div class="logo">
+    <img src="C:\Users\allen\OneDrive\Pictures\eco-icon-with-green-letters-2-leaves-white-background_95164-12306.jpg" alt="EcoWares Logo" />
+  </div>
+  <nav>
+    <ul>
+      <li><a href="#products">Products</a></li>
+      <li><a href="#about">About Us</a></li>
+      <li><a href="#cart">Cart</a></li>
+      <li><a href="#login">Login</a></li>
+      <li><a href="#register">Register</a></li>
+    </ul>
+  </nav>
+</header>
+
+<div class="main">
+  <aside class="sidebar">
+    <h3>About EcoWares - Desktop Layout</h3>
+    <p>Eco-friendly products to reduce plastic waste.</p>
+  <h2>Featured Eco-friendly Products</h2>
+    <section class="products">
+      <article class="product-card" data-id="1">
+        <img src="C:\Users\allen\OneDrive\Pictures\web1.jpeg" alt="Reusable Bag" />
+        <h3>Reusable Bag</h3>
+        <p>Strong, washable, eco-friendly bag for daily shopping.</p>
+        <p class="price">$12.99</p>
+      </article>
+
+      <article class="product-card" data-id="2">
+        <img src="C:\Users\allen\OneDrive\Pictures\kid_brush_1.webp" alt="Bamboo Toothbrush" />
+        <h3>Bamboo Toothbrush</h3>
+        <p>Biodegradable bamboo toothbrush with soft bristles.</p>
+        <p class="price">$5.99</p>
+      </article>
+	  
+	  <article class="product-card" data-id="3">
+        <img src="C:\Users\allen\OneDrive\Pictures\images.jpg" alt="Bamboo Straw" />
+        <h3>Bamboo Straw</h3>
+        <p>Eco-friendly, biodegradable reusable bamboo straw</p>
+        <p class="price">$5.99</p>
+      </article>
+	  
+	  <article class="product-card" data-id="4">
+        <img src="C:\Users\allen\OneDrive\Pictures\cotton_tote_bag_packshot_800x.webp" alt="Cotton Tote Bag" />
+        <h3>Organic Cotton Tote Bag</h3>
+        <p>Durable and stylish organic cotton tote bag.</p>
+        <p class="price">$12.99</p>
+      </article>
+	  
+	   <article class="product-card" data-id="5">
+        <img src="C:\Users\allen\OneDrive\Pictures\pela-case.jpg" alt="Compostable Phone Case" />
+        <h3>Compostable Phone Case</h3>
+        <p>Made from vegan biodegradable materials.</p>
+        <p class="price">$19.99</p>
+      </article>
+	  
+ <main class="form-main">
+    <h2>Login to Your Account</h2>
+    <form id="login-form" novalidate>
+      <label for="username">Username or Email:</label>
+      <input type="text" id="username" name="username" required placeholder="Enter your username or email" />
+      
+      <label for="password">Password:</label>
+      <input type="password" id="password" name="password" required minlength="6" placeholder="Enter your password" />
+      
+      <button type="submit">Login</button>
+    </form>
+  </main>
+  </header>
+
+  <main>
+    <h2>Create your account</h2>
+    <form id="register-form">
+      <label for="fullname">Full Name:</label>
+      <input type="text" id="fullname" name="fullname" required />
+
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required />
+
+      <label for="password">Password:</label>
+      <input type="password" id="password" name="password" required minlength="6" />
+
+      <label for="confirm-password">Confirm Password:</label>
+      <input type="password" id="confirm-password" name="confirm-password" required minlength="6" />
+
+      <button type="submit">Register</button>
+    </form>
+  </main>
+
+  <script>
+    // Simple form validation for password match
+    function validatePasswords() {
+  const password = document.getElementById('password').value;
+  const confirmPassword = document.getElementById('confirmPassword').value;
+
+  if (password !== confirmPassword) {
+    alert('Passwords do not match.');
+    return false;
+  }
+  return true;
+}
+  </script>
+</body>
+</html>
+<script>
+  // Define the products
+  const products = {
+    1: { id: 1, name: "Reusable Bag" },
+    2: { id: 2, name: "Bamboo Toothbrush" },
+    3: { id: 3, name: "Bamboo Straw" },
+    4: { id: 4, name: "Compostable Phone Case" },
+    5: { id: 5, name: "Organic Cotton Tote Bag" }
+  };
+
+  // Initialize cart
+  let cart = [];
+
+  // Function to add an item to the cart
+  function addToCart(productId) {
+    const product = products[productId];
+    if (product) {
+      cart.push(product);
+      updateCartDisplay();
+    }
+  }
+
+  // Function to clear the cart
+  function clearCart() {
+    cart = [];
+    updateCartDisplay();
+  }
+
+  // Function to update the displayed cart
+  function updateCartDisplay() {
+    const cartList = document.getElementById('cart-list');
+    cartList.innerHTML = '';
+    if (cart.length === 0) {
+      cartList.innerHTML = '<li>Cart is empty.</li>';
+    } else {
+      cart.forEach(item => {
+        const li = document.createElement('li');
+        li.textContent = item.name;
+        cartList.appendChild(li);
+      });
+    }
+  }
+
+  // Initialize cart display
+  updateCartDisplay();
+</script>
+</body>
+</html>
+<script>
+  // Simple frontend validation & alert simulation
+  document.getElementById('login-form').addEventListener('submit', function(e) {
+    e.preventDefault();
+    const username = this.username.value.trim();
+    const password = this.password.value.trim();
+
+    if (!username) {
+      alert('Please enter your username or email.');
+      this.username.focus();
+      return;
+    }
+    if (!password || password.length < 6) {
+      alert('Please enter a password with at least 6 characters.');
+      this.password.focus();
+      return;
+    }
+
+    alert(`Welcome back, ${username}! (This is a simulation, no real login)`);
+    this.reset();
+  });
+  </script>
+</body>
+</html>
+  </main>
+
+<div id="cart-page">
+  <h2>Your Shopping Cart</h2>
+  <table id="cart-table" border="1" cellpadding="10" cellspacing="0">
+    <thead>
+      <tr>
+        <th>Item</th>
+        <th>Price</th>
+        <th>Quantity</th>
+        <th>Sub-total</th>
+        <th>Discount</th>
+        <th>Tax</th>
+        <th>Total</th>
+        <th>Actions</th>
+      </tr>
+    </thead>
+    <tbody id="cart-items">
+	<script>
+	const cartItems = [
+  {
+    id: 1,
+    name: "Reusable Bag",
+    price: 12.99,
+    quantity: 2,
+    discount: 0, // in percentage
+    taxRate: 0.07, // 7%
+  },
+  {
+    id: 2,
+    name: "Bamboo Toothbrush",
+    price: 5.99,
+    quantity: 3,
+    discount: 0,
+    taxRate: 0.07,
+  },
+  {
+    id: 3,
+    name: "Bamboo Straw",
+    price: 5.99,
+    quantity: 4,
+    discount: 0,
+    taxRate: 0.07,
+  },
+  {
+    id: 4,
+    name: "Organic Cotton Tote Bag",
+    price: 12.99,
+    quantity: 1,
+    discount: 0,
+    taxRate: 0.07,
+  },
+  {
+    id: 5,
+    name: "Compostable Phone Case",
+    price: 19.99,
+    quantity: 2,
+    discount: 0,
+    taxRate: 0.07,
+  },
+];
+</script>
+    </tbody>
+  </table>
+  <button onclick="showCheckout()">Proceed to Checkout</button>
+</div>
+<script>
+function renderCart() {
+  const tbody = document.getElementById('cart-items');
+  tbody.innerHTML = '';
+
+  let grandTotal = 0;
+
+  cartItems.forEach(item => {
+    const subTotal = item.price * item.quantity;
+    const discountAmount = (item.discount / 100) * subTotal;
+    const discountedTotal = subTotal - discountAmount;
+    const tax = discountedTotal * item.taxRate;
+    const total = discountedTotal + tax;
+
+    grandTotal += total;
+
+    const row = document.createElement('tr');
+
+    row.innerHTML = `
+      <td>${item.name}</td>
+      <td>$${item.price.toFixed(2)}</td>
+      <td>
+        <input type="number" min="1" value="${item.quantity}" onchange="updateQuantity(${item.id}, this.value)">
+      </td>
+      <td>$${subTotal.toFixed(2)}</td>
+      <td>${item.discount}%</td>
+      <td>$${tax.toFixed(2)}</td>
+      <td>$${total.toFixed(2)}</td>
+      <td>
+        <button onclick="removeItem(${item.id})">Remove</button>
+      </td>
+    `;
+    tbody.appendChild(row);
+  });
+
+  // Display total
+  document.getElementById('cart-total').innerText = `Grand Total: $${grandTotal.toFixed(2)}`;
+}
+
+function updateQuantity(id, quantity) {
+  const item = cartItems.find(i => i.id === id);
+  if (item) {
+    item.quantity = parseInt(quantity);
+    renderCart();
+  }
+}
+
+function removeItem(id) {
+  const index = cartItems.findIndex(i => i.id === id);
+  if (index !== -1) {
+    cartItems.splice(index, 1);
+    renderCart();
+  }
+}
+
+function clearCart() {
+  cartItems.length = 0;
+  renderCart();
+}
+
+function showCheckout() {
+  document.getElementById('cart-page').style.display = 'none';
+  document.getElementById('checkout-page').style.display = 'block';
+}
+</script>
+<div id="checkout-page" style="display:none;">
+  <h2>Checkout Summary</h2>
+  <p id="checkout-total"></p>
+  <h3>Shipping Details</h3>
+  <form id="shipping-form">
+    <label>Name:</label><br>
+    <input type="text" id="name" required><br>
+    <label>Address:</label><br>
+    <textarea id="address" required></textarea><br>
+    <label>Amount Being Paid:</label><br>
+    <input type="number" id="amount-paid" readonly><br><br>
+    <button type="button" onclick="confirmOrder()">Confirm</button>
+    <button type="button" onclick="cancelCheckout()">Cancel</button>
+  </form>
+  <button onclick="clearAll()">Clear All</button>
+  <button onclick="finalizeCheckout()">Check Out</button>
+  <button onclick="closeCheckout()">Close</button>
+</div>
+<script>
+let totalCost = 0;
+
+function showCheckout() {
+  // Calculate total cost again for checkout
+  totalCost = 0;
+  cartItems.forEach(item => {
+    const subTotal = item.price * item.quantity;
+    const discountAmount = (item.discount / 100) * subTotal;
+    const discountedTotal = subTotal - discountAmount;
+    const tax = discountedTotal * item.taxRate;
+    const total = discountedTotal + tax;
+    totalCost += total;
+  });
+
+  document.getElementById('checkout-total').innerText = `Total Cost: $${totalCost.toFixed(2)}`;
+  document.getElementById('amount-paid').value = totalCost.toFixed(2);
+  document.getElementById('cart-page').style.display = 'none';
+  document.getElementById('checkout-page').style.display = 'block';
+}
+
+function confirmOrder() {
+  alert('Order Confirmed! Thank you for shopping with EcoWares.');
+  // You can add further logic for processing payment here
+}
+
+function cancelCheckout() {
+  document.getElementById('checkout-page').style.display = 'none';
+  document.getElementById('cart-page').style.display = 'block';
+}
+
+function clearAll() {
+  if (confirm('Are you sure you want to clear your cart?')) {
+    clearCart();
+  }
+}
+
+function finalizeCheckout() {
+  const name = document.getElementById('name').value;
+  const address = document.getElementById('address').value;
+  const amountPaid = document.getElementById('amount-paid').value;
+
+  if (name && address && amountPaid) {
+    alert(`Thank you, ${name}! Your order totaling $${amountPaid} has been placed.`);
+    // Reset cart and form
+    cartItems.length = 0;
+    renderCart();
+    cancelCheckout();
+  } else {
+    alert('Please fill all shipping details.');
+  }
+}
+
+function closeCheckout() {
+  cancelCheckout();
+}
+window.onload = () => {
+  renderCart();
+};
+</script>
+ </footer>
+    <p>© 2025 EcoWares. All rights reserved.</p>
+  </footer>
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>EcoWares - Mobile Layout</title>
+<style>
+  /* Reset & Base Styles */
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  body {
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    background-color: #f0f8f5;
+    color: #333;
+  }
+
+  /* Header with logo and menu icon */
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+    background-color: #4CAF50;
+  }
+  .logo {
+    display: flex;
+    align-items: center;
+  }
+  .logo img {
+    width: 120px;
+    height: auto;
+  }
+  .menu-icon {
+    font-size: 24px;
+    cursor: pointer;
+    color: white;
+  }
+
+  /* Collapsible Nav Menu */
+  .nav-menu {
+    display: none;
+    flex-direction: column;
+    background-color: #4CAF50;
+  }
+  .nav-menu.show {
+    display: flex;
+  }
+  .nav-menu a {
+    padding: 15px 20px;
+    color: white;
+    text-decoration: none;
+    border-top: 1px solid rgba(255,255,255,0.3);
+  }
+
+  /* Content sections stacked vertically */
+  .content {
+    padding: 20px;
+  }
+  section {
+    margin-bottom: 30px;
+  }
+  h2 {
+    margin-bottom: 15px;
+    color: #2e7d32;
+  }
+
+  /* Product cards, full width */
+  .products {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+  .product-card {
+    background: #fff;
+    border-radius: 8px;
+    padding: 15px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  }
+  /* Responsive product images for mobile */
+  .product-image {
+    width: 100%;
+    height: auto;
+    display: block;
+    margin-bottom: 10px;
+  }
+
+  /* Footer */
+  footer {
+    background-color: #2e7d32;
+    color: white;
+    text-align: center;
+    padding: 15px 20px;
+  }
+
+  /* Responsive media query for larger devices */
+  @media(min-width: 600px) {
+    /* Optional: Style adjustments for larger screens if needed */
+  }
+
+  /* Image size adjustments for desktop */
+  @media(min-width: 950px) {
+    .product-image {
+      max-width: 250px;
+    }
+  }
+</style>
+</head>
+<body>
+
+<header class="header">
+  <div class="logo">
+    <img src="C:\Users\allen\OneDrive\Pictures\eco-icon-with-green-letters-2-leaves-white-background_95164-12306.jpg" alt="EcoWares Logo" />
+  </div>
+  <div class="menu-icon" id="menu-toggle">&#9776;</div>
+</header>
+
+<nav class="nav-menu" id="nav-menu">
+  <a href="#products">Products</a>
+  <a href="#about">About Us</a>
+  <a href="#cart">Cart</a>
+  <a href="#login">Login</a>
+  <a href="#register">Register</a>
+</nav>
+
+<div class="content">
+  <section id="about">
+    <h2>About EcoWares - Mobile Layout</h2>
+    <p>Eco-friendly products to reduce plastic waste.</p>
+  </section>
+  <aside class="sidebar">
+  <section id="products">
+    <h2>Featured Eco-friendly Products</h2>
+    <section class="products">
+      <article class="product-card" data-id="1">
+        <img src="C:\Users\allen\OneDrive\Pictures\web1.jpeg" alt="Reusable Bag" />
+        <h3>Reusable Bag</h3>
+        <p>Strong, washable, eco-friendly bag for daily shopping.</p>
+        <p class="price">$12.99</p>
+      </article>
+
+      <article class="product-card" data-id="2">
+        <img src="C:\Users\allen\OneDrive\Pictures\kid_brush_1.webp" alt="Bamboo Toothbrush" />
+        <h3>Bamboo Toothbrush</h3>
+        <p>Biodegradable bamboo toothbrush with soft bristles.</p>
+        <p class="price">$5.99</p>
+      </article>
+	  
+	  <article class="product-card" data-id="3">
+        <img src="C:\Users\allen\OneDrive\Pictures\images.jpg" alt="Bamboo Straw" />
+        <h3>Bamboo Straw</h3>
+        <p>Eco-friendly, biodegradable reusable bamboo straw</p>
+        <p class="price">$5.99</p>
+      </article>
+	  
+	  <article class="product-card" data-id="4">
+        <img src="C:\Users\allen\OneDrive\Pictures\cotton_tote_bag_packshot_800x.webp" alt="Cotton Tote Bag" />
+        <h3>Organic Cotton Tote Bag</h3>
+        <p>Durable and stylish organic cotton tote bag.</p>
+        <p class="price">$12.99</p>
+      </article>
+	  
+	   <article class="product-card" data-id="5">
+        <img src="C:\Users\allen\OneDrive\Pictures\pela-case.jpg" alt="Compostable Phone Case" />
+        <h3>Compostable Phone Case</h3>
+        <p>Made from vegan biodegradable materials.</p>
+        <p class="price">$19.99</p>
+      </article>
+  </section>
+ <main class="form-main">
+    <h2>Login to Your Account</h2>
+    <form id="login-form" novalidate>
+      <label for="username">Username or Email:</label>
+      <input type="text" id="username" name="username" required placeholder="Enter your username or email" />
+      
+      <label for="password">Password:</label>
+      <input type="password" id="password" name="password" required minlength="6" placeholder="Enter your password" />
+      
+      <button type="submit">Login</button>
+    </form>
+  </main>
+  </header>
+
+  <main>
+    <h2>Create your account</h2>
+    <form id="register-form">
+      <label for="fullname">Full Name:</label>
+      <input type="text" id="fullname" name="fullname" required />
+
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required />
+
+      <label for="password">Password:</label>
+      <input type="password" id="password" name="password" required minlength="6" />
+
+      <label for="confirm-password">Confirm Password:</label>
+      <input type="password" id="confirm-password" name="confirm-password" required minlength="6" />
+
+      <button type="submit">Register</button>
+    </form>
+  </main>
+
+  <script>
+    // Simple form validation for password match
+    function validatePasswords() {
+  const password = document.getElementById('password').value;
+  const confirmPassword = document.getElementById('confirmPassword').value;
+
+  if (password !== confirmPassword) {
+    alert('Passwords do not match.');
+    return false;
+  }
+  return true;
+}
+  </script>
+  <script>
+  // Toggle menu for mobile
+  document.getElementById('menu-toggle').addEventListener('click', function() {
+    document.getElementById('nav-menu').classList.toggle('show');
+  });
+</script>
+<script>
+  // Define the products
+  const products = {
+    1: { id: 1, name: "Reusable Bag" },
+    2: { id: 2, name: "Bamboo Toothbrush" },
+    3: { id: 3, name: "Bamboo Straw" },
+    4: { id: 4, name: "Compostable Phone Case" },
+    5: { id: 5, name: "Organic Cotton Tote Bag" }
+  };
+
+  // Initialize cart
+  let cart = [];
+
+  // Function to add an item to the cart
+  function addToCart(productId) {
+    const product = products[productId];
+    if (product) {
+      cart.push(product);
+      updateCartDisplay();
+    }
+  }
+
+  // Function to clear the cart
+  function clearCart() {
+    cart = [];
+    updateCartDisplay();
+  }
+
+  // Function to update the displayed cart
+  function updateCartDisplay() {
+    const cartList = document.getElementById('cart-list');
+    cartList.innerHTML = '';
+    if (cart.length === 0) {
+      cartList.innerHTML = '<li>Cart is empty.</li>';
+    } else {
+      cart.forEach(item => {
+        const li = document.createElement('li');
+        li.textContent = item.name;
+        cartList.appendChild(li);
+      });
+    }
+  }
+
+  // Initialize cart display
+  updateCartDisplay();
+</script>
+</body>
+</html>
+<script>
+  // Simple frontend validation & alert simulation
+  document.getElementById('login-form').addEventListener('submit', function(e) {
+    e.preventDefault();
+    const username = this.username.value.trim();
+    const password = this.password.value.trim();
+
+    if (!username) {
+      alert('Please enter your username or email.');
+      this.username.focus();
+      return;
+    }
+    if (!password || password.length < 6) {
+      alert('Please enter a password with at least 6 characters.');
+      this.password.focus();
+      return;
+    }
+
+    alert(`Welcome back, ${username}! (This is a simulation, no real login)`);
+    this.reset();
+  });
+  </script>
+</body>
+</html>
+  </main>
+
+<div id="cart-page">
+  <h2>Your Shopping Cart</h2>
+  <table id="cart-table" border="1" cellpadding="10" cellspacing="0">
+    <thead>
+      <tr>
+        <th>Item</th>
+        <th>Price</th>
+        <th>Quantity</th>
+        <th>Sub-total</th>
+        <th>Discount</th>
+        <th>Tax</th>
+        <th>Total</th>
+        <th>Actions</th>
+      </tr>
+    </thead>
+    <tbody id="cart-items">
+	<script>
+	const cartItems = [
+  {
+    id: 1,
+    name: "Reusable Bag",
+    price: 12.99,
+    quantity: 2,
+    discount: 0, // in percentage
+    taxRate: 0.07, // 7%
+  },
+  {
+    id: 2,
+    name: "Bamboo Toothbrush",
+    price: 5.99,
+    quantity: 3,
+    discount: 0,
+    taxRate: 0.07,
+  },
+  {
+    id: 3,
+    name: "Bamboo Straw",
+    price: 5.99,
+    quantity: 4,
+    discount: 0,
+    taxRate: 0.07,
+  },
+  {
+    id: 4,
+    name: "Organic Cotton Tote Bag",
+    price: 12.99,
+    quantity: 1,
+    discount: 0,
+    taxRate: 0.07,
+  },
+  {
+    id: 5,
+    name: "Compostable Phone Case",
+    price: 19.99,
+    quantity: 2,
+    discount: 0,
+    taxRate: 0.07,
+  },
+];
+</script>
+    </tbody>
+  </table>
+  <button onclick="showCheckout()">Proceed to Checkout</button>
+</div>
+<script>
+function renderCart() {
+  const tbody = document.getElementById('cart-items');
+  tbody.innerHTML = '';
+
+  let grandTotal = 0;
+
+  cartItems.forEach(item => {
+    const subTotal = item.price * item.quantity;
+    const discountAmount = (item.discount / 100) * subTotal;
+    const discountedTotal = subTotal - discountAmount;
+    const tax = discountedTotal * item.taxRate;
+    const total = discountedTotal + tax;
+
+    grandTotal += total;
+
+    const row = document.createElement('tr');
+
+    row.innerHTML = `
+      <td>${item.name}</td>
+      <td>$${item.price.toFixed(2)}</td>
+      <td>
+        <input type="number" min="1" value="${item.quantity}" onchange="updateQuantity(${item.id}, this.value)">
+      </td>
+      <td>$${subTotal.toFixed(2)}</td>
+      <td>${item.discount}%</td>
+      <td>$${tax.toFixed(2)}</td>
+      <td>$${total.toFixed(2)}</td>
+      <td>
+        <button onclick="removeItem(${item.id})">Remove</button>
+      </td>
+    `;
+    tbody.appendChild(row);
+  });
+
+  // Display total
+  document.getElementById('cart-total').innerText = `Grand Total: $${grandTotal.toFixed(2)}`;
+}
+
+function updateQuantity(id, quantity) {
+  const item = cartItems.find(i => i.id === id);
+  if (item) {
+    item.quantity = parseInt(quantity);
+    renderCart();
+  }
+}
+
+function removeItem(id) {
+  const index = cartItems.findIndex(i => i.id === id);
+  if (index !== -1) {
+    cartItems.splice(index, 1);
+    renderCart();
+  }
+}
+
+function clearCart() {
+  cartItems.length = 0;
+  renderCart();
+}
+
+function showCheckout() {
+  document.getElementById('cart-page').style.display = 'none';
+  document.getElementById('checkout-page').style.display = 'block';
+}
+</script>
+<div id="checkout-page" style="display:none;">
+  <h2>Checkout Summary</h2>
+  <p id="checkout-total"></p>
+  <h3>Shipping Details</h3>
+  <form id="shipping-form">
+    <label>Name:</label><br>
+    <input type="text" id="name" required><br>
+    <label>Address:</label><br>
+    <textarea id="address" required></textarea><br>
+    <label>Amount Being Paid:</label><br>
+    <input type="number" id="amount-paid" readonly><br><br>
+    <button type="button" onclick="confirmOrder()">Confirm</button>
+    <button type="button" onclick="cancelCheckout()">Cancel</button>
+  </form>
+  <button onclick="clearAll()">Clear All</button>
+  <button onclick="finalizeCheckout()">Check Out</button>
+  <button onclick="closeCheckout()">Close</button>
+</div>
+<script>
+let totalCost = 0;
+
+function showCheckout() {
+  // Calculate total cost again for checkout
+  totalCost = 0;
+  cartItems.forEach(item => {
+    const subTotal = item.price * item.quantity;
+    const discountAmount = (item.discount / 100) * subTotal;
+    const discountedTotal = subTotal - discountAmount;
+    const tax = discountedTotal * item.taxRate;
+    const total = discountedTotal + tax;
+    totalCost += total;
+  });
+
+  document.getElementById('checkout-total').innerText = `Total Cost: $${totalCost.toFixed(2)}`;
+  document.getElementById('amount-paid').value = totalCost.toFixed(2);
+  document.getElementById('cart-page').style.display = 'none';
+  document.getElementById('checkout-page').style.display = 'block';
+}
+
+function confirmOrder() {
+  alert('Order Confirmed! Thank you for shopping with EcoWares.');
+  // You can add further logic for processing payment here
+}
+
+function cancelCheckout() {
+  document.getElementById('checkout-page').style.display = 'none';
+  document.getElementById('cart-page').style.display = 'block';
+}
+
+function clearAll() {
+  if (confirm('Are you sure you want to clear your cart?')) {
+    clearCart();
+  }
+}
+
+function finalizeCheckout() {
+  const name = document.getElementById('name').value;
+  const address = document.getElementById('address').value;
+  const amountPaid = document.getElementById('amount-paid').value;
+
+  if (name && address && amountPaid) {
+    alert(`Thank you, ${name}! Your order totaling $${amountPaid} has been placed.`);
+    // Reset cart and form
+    cartItems.length = 0;
+    renderCart();
+    cancelCheckout();
+  } else {
+    alert('Please fill all shipping details.');
+  }
+}
+
+function closeCheckout() {
+  cancelCheckout();
+}
+window.onload = () => {
+  renderCart();
+};
+</script>
+ </footer>
+    <p>© 2025 EcoWares. All rights reserved.</p>
+  </footer>
